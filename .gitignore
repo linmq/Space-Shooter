@@ -1,3 +1,7 @@
 Library/
 Library/ShaderCache.db
 Library/metadata/2d/2d316fac392ba4370be53485fd5a26ff
+Assembly-CSharp.csproj
+Assembly-CSharp-vs.csproj
+Space-Shooter-csharp.sln
+Space-Shooter.userprefs
