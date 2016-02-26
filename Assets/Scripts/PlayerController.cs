@@ -19,6 +19,14 @@ public class PlayerController : MonoBehaviour
 	public float fireRate = .25f;
 	private float nextFire = 0f;
 
+	public GUIText scoreText;
+	private int score;
+
+	void UpdateScore()
+	{
+		scoreText.text = "Score: " + score;
+	}
+
 	void FixedUpdate()
 	{
 		float moveHorizontal = Input.GetAxis ("Horizontal");
