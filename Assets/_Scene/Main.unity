@@ -2986,7 +2986,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab45fd61057673c4bbbdd8a1b52a737e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hazard: {fileID: 189474, guid: b91f0d544d61bca408ec0f4a83931982, type: 2}
+  hazards:
+  - {fileID: 101876, guid: f97cb36bfa2c87041864b6a209736415, type: 2}
+  - {fileID: 191346, guid: eceeb69b559dc764ebda3cb93b7ebd1c, type: 2}
+  - {fileID: 170310, guid: 9b9b524aba65448418a23457ef9095fb, type: 2}
+  - {fileID: 104086, guid: 90b6de768d06fcc4a96946eec8d2539b, type: 2}
   spawnValues: {x: 6, y: 0, z: 16}
   hazardCount: 10
   spawnWait: .5
