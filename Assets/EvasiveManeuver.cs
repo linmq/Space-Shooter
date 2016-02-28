@@ -26,7 +26,7 @@ public class EvasiveManeuver : MonoBehaviour
 		yield return new WaitForSeconds (Random.Range (startWait.x, startWait.y));
 		while (true) 
 		{
-			targetManeuver = Random.Range( 1f, dodge * -Mathf.Sign(transform.position.x));
+			targetManeuver = Random.Range( 1f, dodge) * -Mathf.Sign(transform.position.x);
 			yield return new WaitForSeconds(Random.Range(maneuverTime.x, maneuverTime.y));
 			targetManeuver = 0;
 			yield return new WaitForSeconds(Random.Range(maneuverWait.x, maneuverWait.y));
@@ -45,6 +45,6 @@ public class EvasiveManeuver : MonoBehaviour
 			Mathf.Clamp( rigidbody.position.z, boundary.zMin, boundary.zMax )
 		);
 
-		this.rigidbody.rotation = Quaternion.Euler(0f, 0f, this.rigidbody.velocity.z * -tilt);
+		this.rigidbody.rotation = Quaternion.Euler(0f, 0f, this.rigidbody.velocity.x * -tilt);
 	}
 }
